@@ -1,0 +1,53 @@
+
+.skill-page>h1{
+    margin-left: 40%;
+   margin-top: -20px;
+   color: brown;
+    font-size: 90px;
+}
+    
+
+.skills{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, max-content));
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 60px;
+    gap: 150px;
+   
+}
+.skills>img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.skill>img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+    
+
+
+.skill{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, max-content));
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 100px;
+    gap: 150px;
+
+    
+}
+.skill-count{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/010/742/699/non_2x/gradient-background-with-blue-yellow-colors-wallpaper-or-banner-free-vector.jpg);
+    
+}  
+h1{
+    padding-bottom: -40px;
+}

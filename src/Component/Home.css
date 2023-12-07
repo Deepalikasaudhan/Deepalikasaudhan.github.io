@@ -1,0 +1,57 @@
+.home-containar{
+    margin-top: -40px;
+    margin-bottom: 100px;
+    width: 100%;
+   background-image: url(https://static.vecteezy.com/system/resources/previews/010/742/699/non_2x/gradient-background-with-blue-yellow-colors-wallpaper-or-banner-free-vector.jpg);
+}
+.home-containar .home-left-side>h3{
+    margin-left: 120px;
+    font-size: 40px;
+  
+    margin-bottom: 60px;
+
+}
+.home-containar .home-left-side>h4{
+    margin-left: 120px;
+    font-size: 40px;
+    margin-top: -70px;
+
+}
+.home-containar .home-left-side>h5{
+    margin-left: 120px;
+    font-size: 40px;
+    margin-top: -40px;
+
+
+}
+.home-containar .home-left-side>h6{
+    margin-left: 120px;
+    font-size: 40px;
+    margin-top: -50px;
+
+
+}
+
+
+.home-containar .resumeButton{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.home-containar >a{
+    text-decoration: none;
+}
+.home-containar .home-right-side>div>img {
+   margin-left: 700px;
+   height: 420px;
+   width: 450px;
+    border-radius: 60px 70px 40px 140px;
+    border: solid 10px wheat;
+    margin-top: -350px;
+
+}

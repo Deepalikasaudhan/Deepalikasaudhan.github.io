@@ -1,0 +1,53 @@
+
+    
+.contact-container-page{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/010/742/699/non_2x/gradient-background-with-blue-yellow-colors-wallpaper-or-banner-free-vector.jpg);
+
+    padding-bottom: 40px;
+    padding-top: 20px;
+    width: 100%;
+    display: block;
+    font-family: Poppins,sans-serif;
+}  
+.heading-page{
+  
+    text-align: center;
+    color: brown;
+}
+h1{
+    display: block;
+    font-size: 45px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: Poppins,sans-serif;
+}
+.heading2-page{
+    color: rgb(17, 144, 148);
+    margin: 28px;
+    text-align: center;
+}
+.contact-allLinksDiv{
+    color: aqua;
+    display: flex;
+    font-size: 33px;
+    gap: 35px;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+div{
+    display: block;
+}
+.contact-allLinksDiv>div>a{
+    text-decoration: none;
+}
+.contact-platfromLinks{
+    border: 1px solid rgb(99, 22, 22);
+    border-radius: 4px;
+    color: rgb(25, 194, 140);
+    font-size: 30px;
+    padding: 3px 5px;
+}

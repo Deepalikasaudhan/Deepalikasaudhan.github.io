@@ -1,0 +1,29 @@
+.about-side>h1{
+  margin-top: 100px;
+  
+   font-size: 60px; 
+   padding-top: 80px;
+   color: brown;
+   text-align: center;
+
+}
+.about-side>p{
+  margin-left: 320px;
+  margin-right: 320px;
+  font-size: 24px;
+ color:black;
+ padding-bottom: 10px;
+ text-align: center;
+ border: 10px solid white
+   
+  
+  }
+  .cont{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/010/742/699/non_2x/gradient-background-with-blue-yellow-colors-wallpaper-or-banner-free-vector.jpg);
+  }
+  .about-page-container{
+    margin-top: -80px;
+  }
+  .mail-side{
+    text-align: center;
+  }
