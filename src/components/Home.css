@@ -45,7 +45,6 @@
   font-size: 3rem !important;
   font-weight: bold;
   font-style: italic;
-
   color: #ffeb3b;
   text-shadow: 0 0 15px #ffeb3b;
   margin-top: -20px;
@@ -59,7 +58,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: -20px;
-  
 }
 
 /* Buttons */
@@ -138,7 +136,7 @@
 .image-container {
   width: 340px !important;
   height: 340px !important;
-  border-radius: 50%;
+  border-radius: 0; /* Square image */
   overflow: hidden;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
 }
@@ -228,7 +226,7 @@
   }
 
   .profession {
-    font-size: 1.8rem!important;
+    font-size: 1.8rem !important;
   }
 
   .image-container {
