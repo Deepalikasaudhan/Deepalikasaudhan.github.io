@@ -1,0 +1,158 @@
+/* Projects Section */
+.section {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f8f9fa, #e3e7eb);
+}
+
+/* Section Heading */
+h1 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+h1::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #ff5733;
+    display: block;
+    margin: 8px auto;
+    border-radius: 4px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Projects Container */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Project Card (Fixed Size) */
+.project-card {
+    background: rgba(1, 28, 46, 0.651);;
+    border-radius: 12px;
+    border: 5px solid #222;  /* Bold border added */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    text-align: center;
+    width: 1000px;  /* Fixed width */
+    height: 800px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Image */
+.project-image {
+    width: 100%;
+    height: 75%;  /* Image takes 75% of card height */
+    object-fit: cover;
+    border-bottom: 3px solid #ff5733;
+}
+
+/* Project Info */
+.project-info {
+    padding: 20px;
+    height: 45%; /* Text area takes remaining 45% */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Tech Stack */
+.tech-stack {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.tech {
+    background: #eee;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Buttons */
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 10px 16px;
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.btn-secondary {
+    background: #28a745;
+}
+
+.btn-secondary:hover {
+    background: #218838;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-card {
+        width: 90%; /* Adjusts width for smaller screens */
+        height: auto; /* Allows height to adjust */
+    }
+
+    .project-image {
+        height: 50%;
+    }
+
+    .project-info {
+        height: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-image {
+        height: 55%;
+    }
+
+    .project-info {
+        height: 55%;
+    }
+}

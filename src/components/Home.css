@@ -1,0 +1,238 @@
+/* Home Section */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Main Container */
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: 0.3s ease-in-out;
+}
+
+/* Left Side - Text */
+.home-text {
+  flex: 1;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.home-text h1 {
+  font-size: 3rem !important;
+  font-weight: bold;
+  font-style: italic;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-text h2 {
+  font-size: 3rem !important;
+  font-weight: bold;
+  font-style: italic;
+
+  color: #ffeb3b;
+  text-shadow: 0 0 15px #ffeb3b;
+  margin-top: -20px;
+}
+
+.profession {
+  font-size: 3rem !important;
+  font-weight: bold;
+  font-style: italic;
+  background: linear-gradient(90deg, #12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -20px;
+  
+}
+
+/* Buttons */
+.home-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.primary-btn, .secondary-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  text-align: center;
+  min-width: 180px;
+}
+
+/* Primary Button */
+.primary-btn {
+  background: #ffeb3b;
+  color: black;
+  box-shadow: 0 0 15px #ffeb3b;
+}
+
+.primary-btn:hover {
+  background: #ffd700;
+  box-shadow: 0 0 20px #ffd700;
+  transform: scale(1.08);
+}
+
+/* Secondary Button */
+.secondary-btn {
+  background: transparent;
+  border: 2px solid #ffeb3b;
+  color: #ffeb3b;
+}
+
+.secondary-btn:hover {
+  background: #ffeb3b;
+  color: black;
+  transform: scale(1.08);
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 25px;
+}
+
+.social-links a {
+  font-size: 2rem;
+  margin: 0 15px;
+  color: #ffeb3b;
+  transition: 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  transform: scale(1.3);
+  color: white;
+}
+
+/* Right Side - Image */
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  width: 340px !important;
+  height: 340px !important;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .home-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .profession {
+    font-size: 1.4rem;
+  }
+
+  .image-container {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-text h1 {
+    font-size: 2rem;
+  }
+
+  .home-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .profession {
+    font-size: 1.2rem;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primary-btn, .secondary-btn {
+    width: 85%;
+    max-width: 200px;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .image-container {
+    width: 280px !important;
+    height: 280px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-text h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .home-text h2 {
+    font-size: 1.8rem !important;
+  }
+
+  .profession {
+    font-size: 1.8rem!important;
+  }
+
+  .image-container {
+    width: 260px !important;
+    height: 260px !important;
+  }
+}

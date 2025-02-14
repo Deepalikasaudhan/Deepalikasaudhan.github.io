@@ -1,0 +1,165 @@
+/* General Navbar Styles */
+/* General Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: top 0.3s ease-in-out;
+}
+
+/* Prevent content from hiding under navbar */
+body {
+  padding-top: 70px; /* Adjust based on navbar height */
+}
+
+/* Underline Effect on Hover */
+.navbar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #ffcc00;
+  transition: width 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+/* Show underline when hovering over navbar */
+.navbar:hover::after {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Underline Effect for Buttons */
+.nav-links button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #ffcc00;
+  transition: width 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+/* Show underline on hover */
+.nav-links button:hover::after {
+  width: 100%;
+}
+
+/* Show underline on active section */
+.nav-links .active::after {
+  width: 100%;
+}
+
+/* Resume Button */
+.resume-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-button button {
+  background: #ffcc00;
+  border: none;
+  color: #222;
+  font-size: 16px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.resume-button button:hover {
+  background: #e6b800;
+}
+
+/* Hamburger Menu (For Mobile) */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  margin-right: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    z-index: 1100;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: rgba(34, 34, 34, 0.95);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease-in-out;
+  }
+
+  .nav-links.open {
+    left: 0;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .resume-button {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,138 @@
+/* Contact Section Styling */
+.section {
+  padding: 80px 10%;
+  text-align: center;
+   background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);;
+  color: white;
+}
+
+.section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, #ff6b6b, #ffb88c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #ffb88c;
+}
+
+.name-icon {
+  width: 28px;
+  height: 28px;
+  color: #ff6b6b;
+}
+
+.section p {
+  font-size: 1rem;
+  font-style: italic;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+/* Contact Buttons */
+.all-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.all-buttons .btn {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.all-buttons .btn svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Unique Hover Effects for Each Button */
+.email-btn:hover {
+  background: #ff5722;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px #ff5722;
+}
+
+.linkedin-btn:hover {
+  background: #0077b5;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px #0077b5;
+}
+
+.github-btn:hover {
+  background: #333;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px #333;
+}
+
+.twitter-btn:hover {
+  background: #1da1f2;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px #1da1f2;
+}
+
+.instagram-btn:hover {
+  background: #e1306c;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px #e1306c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 5%;
+  }
+
+  .all-buttons .btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .all-buttons .btn svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section h1 {
+    font-size: 2rem;
+  }
+
+  .contact-name {
+    font-size: 1.5rem;
+  }
+
+  .all-buttons .btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .all-buttons .btn svg {
+    width: 25px;
+    height: 25px;
+  }
+}
